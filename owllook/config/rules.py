@@ -62,7 +62,7 @@ REPLACE_RULES = {
 }
 
 # 搜索引擎检索优先级
-ENGINE_PRIORITY = ['baidu', 'bing', 'duck_go', '360']
+ENGINE_PRIORITY = ['360', 'baidu', 'bing', 'duck_go']
 
 # Rules
 Rules = namedtuple('Rules', 'content_url chapter_selector content_selector')
@@ -172,6 +172,7 @@ LATEST_RULES = {
     "www.biqugexsw.com": PLAN_01,
     "www.biqu6.com": PLAN_01,
     "www.xiuxs.com": PLAN_01,
+    "www.booktxt.net": PLAN_01,
     "www.biqule.com": PLAN_01,
     "www.biquzi.com": PLAN_01,
     "www.biquku.la": PLAN_01,
@@ -201,7 +202,7 @@ RULES = {
     # 'www.hhlwx.com': Rules('www.hhlwx.co', {'class': 'chapterlist'},{}),
     'www.biquwu.cc': Rules('https://www.biquwu.cc/', {'class': 'box_con'}, {'id': 'content'}),
     # 已解析
-    'www.biqugex.com': Rules('0', {'class': 'box_con'}, {'id': 'content'}),
+    'www.biqugex.com': Rules('http://www.biqugex.com/', {'class': 'listmain'}, {'id': 'content'}),
     # 已解析
     'www.bbiquge.com': Rules('0', {'class': 'box_con'}, {'id': 'content'}),
     # 已解析
@@ -393,7 +394,7 @@ RULES = {
     # 已解析
     'www.263zw.com': Rules('1', {'class': 'chapter'}, {'id': 'chapterContent'}),
     # 已解析
-    'www.biquge5.com': Rules('1', {'id': 'chapterslist'}, {'id': 'content'}),
+    'www.biquge5.com': Rules('1', {'class': 'box_con'}, {'id': 'content'}),
     # 已解析
     'www.yooread.com': Rules('http://www.yooread.com', {'id': 'chapterList'}, {'tag': 'p'}),
     # 已解析
@@ -401,7 +402,7 @@ RULES = {
     # 已解析
     'www.kanshuhai.com': Rules('0', {'id': 'book'}, {'id': 'content'}),
     # 已解析
-    'www.bequge.com': Rules('0', {'class': 'box_con'}, {'id': 'content'}),
+    'www.bequge.com': Rules('https://www.bequge.com/', {'class': 'box_con'}, {'id': 'content'}),
     # 已解析  请求失败
     # 'www.biquge5200.com': Rules('1', {'id': 'list'}, {'id': 'content'}),
     # 已解析

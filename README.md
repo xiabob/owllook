@@ -8,6 +8,12 @@
 - 公众号：[**粮草小说**](http://oe7yjec8x.bkt.clouddn.com/howie/2018-03-13-%E7%B2%AE%E8%8D%89%E5%B0%8F%E8%AF%B4.jpg-blog.howie)，有兴趣的话可以关注下
 - 博客介绍：[http://blog.howie6879.cn/post/22/](http://blog.howie6879.cn/post/22/)
 
+衍生项目：
+
+- 终端看小说： [NIYT](https://github.com/howie6879/NIYT)
+- 小说监控工具：[owllook_gui](https://github.com/howie6879/owllook_gui)
+- 小说接口：[owllook_api](https://github.com/howie6879/owllook_api)
+
 **注意**：若将本项目部署并发行，请**声明来源**，本项目纯属**共享学习之用，不得用于商业！**
 
 ### Overview
@@ -18,7 +24,7 @@
 
 目前采用的是直接在搜索引擎上进行结果检索，我尽量写少量的规则来完成解析，具体见[规则定义](./docs/规则定义.md)，遇到自己喜欢的小说网站，你也可以自己添加解析，`owllook`目前解析了超过 **200+** 网站，追更网站解析了**50+**
 
-有一些地方需要用到爬虫，比如说排行榜，一些书籍信息等，我不想动用重量级爬虫框架来写，于是我在owllook里面编写了一个很轻量的爬虫框架来做这件事，见 **[talospider](https://github.com/howie6879/talospider)**
+有一些地方需要用到爬虫，比如说排行榜，一些书籍信息等，我不想动用重量级爬虫框架来写，于是我在owllook里面编写了一个很轻量的爬虫框架来做这件事，见 **[aspider](https://github.com/howie6879/aspider)**
 
 BTW，sanic写界面确实不是很方便，至于为什么写这个，一是想利用`sanic`尽量做成异步服务，二是想就此练习下推荐系统，顺便作为毕业设计
 
@@ -91,7 +97,6 @@ docker run --env-file ./dev_owllook.env -d -p 8001:8001 owllook:0.1
 - 章节异步加载 感谢@[mscststs](https://github.com/mscststs)
 - 排行榜 - 起点+owllook
 - 自带爬虫框架，统一爬虫规范 - [talospider](https://github.com/howie6879/talospider)
-- owllook终端版 - [NIYT](https://github.com/howie6879/NIYT)
 
 #### TODO
 
